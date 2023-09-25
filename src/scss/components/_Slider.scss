@@ -2,6 +2,9 @@
   margin-top: 0;
   width: 100%;
 }
+.slider-normal {
+  height: 60vh;
+}
 .one.withsmallpadding {
   padding: 30px 0 30px 0;
   float: left;
@@ -14,6 +17,25 @@
   background-size: cover;
   background-position: center center;
 }
+@include mobile {
+  .one.withbg {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    background: #000;
+  }
+  .ppb_tour_search_youtube {
+    max-height: 500px;
+  }
+  .parallax {
+    z-index: 0;
+    clear: both;
+  }
+  .slider-normal {
+    height: 40vh;
+  }
+}
+
 .parallax {
   overflow: hidden;
 }

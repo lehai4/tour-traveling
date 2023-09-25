@@ -2,9 +2,8 @@ const SliderTwo = () => {
   return (
     <div
       data-bg="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg"
-      className="parallax rocket-lazyload entered lazyloaded exited"
+      className="parallax rocket-lazyload entered lazyloaded exited slider-normal"
       style={{
-        height: "60vh",
         zIndex: "0",
         backgroundImage:
           "url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg)",
