@@ -1,0 +1,88 @@
+.trip_info_wrapper {
+  padding: 5px 15px 15px 15px;
+}
+.trip_info_wrapper h4 {
+  margin-top: 2px;
+  font-size: 20px;
+}
+.image-trip {
+  border: 1px solid $txt-second-color;
+  border-radius: 5px;
+}
+.tour_excerpt {
+  font-size: 13px;
+  margin-top: -5px;
+}
+.tour_attribute_wrapper,
+.tour_attribute_rating {
+  @include flex(center, space-between);
+  @include direction(row);
+}
+.tour_attribute_rating .tour_attribute_rating_count {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+}
+.tour_attribute_days {
+  max-width: 40%;
+  float: right;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2em;
+}
+a.tour_image {
+  display: block;
+  position: relative;
+}
+.tour_image img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+a.tour_image .tour_price,
+.grid.portfolio_type .tour_price {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  background: #ff4a52;
+  padding: 3px 10px 2px 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+a.tour_image .tour_label,
+.grid.portfolio_type .tour_label,
+.tour_label.sidebar {
+  background: #1ec6b6;
+}
+.tour_label,
+.single_tour_attribute_wrapper .tour_label,
+a.tour_image .tour_label,
+.grid.portfolio_type .tour_label {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  border-radius: 50px;
+  background: #1ec6b6;
+  padding: 10px 7px 10px 7px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.portfolio_type:hover a.tour_image .tour_price {
+  left: 5px;
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

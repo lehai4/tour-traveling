@@ -1,0 +1,23 @@
+.wrapper-title {
+  @include flex(center, center);
+  @include direction(column);
+  @include mobile {
+    padding: 30px 0 30px 0 !important;
+  }
+  float: inherit;
+}
+.ppb_title {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: none;
+  letter-spacing: 0px;
+  @include mobile {
+    font-size: 24px !important;
+    margin-top: 10px;
+  }
+}
+.page_tagline {
+  font-weight: 500;
+  font-size: 15px;
+  color: #8d9199;
+}

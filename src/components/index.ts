@@ -1,0 +1,11 @@
+export { default as SectionTitle } from "./SectionTitle";
+export { default as Destination } from "./Destination";
+export { default as SliderOne } from "./Slider/Slider1";
+export { default as SliderTwo } from "./Slider/Slider2";
+export { default as Trip } from "./Trip";
+export { default as Star } from "./Star";
+export { default as Choose } from "./Choose";
+export { default as Article } from "./Article";
+export { default as FooterTop } from "./Footer/FooterTop";
+export { default as FooterBottom } from "./Footer/FooterBottom";
+export { default as Form } from "./Form";

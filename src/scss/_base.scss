@@ -1,0 +1,235 @@
+*,
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100% !important;
+  @include desktop {
+    font-size: 100% !important;
+  }
+  @include tablet {
+    font-size: 80% !important;
+  }
+  @include mobile {
+    font-size: 70% !important;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+:focus {
+  outline: 0;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img,
+svg {
+  max-width: 100%;
+  object-fit: cover;
+  @include mobile {
+    max-width: 100%;
+  }
+}
+
+a:hover {
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+#autocomplete li strong {
+  font-weight: 700 !important;
+  letter-spacing: 0px;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+.standard-wrapper {
+  width: 960px;
+  margin: auto;
+  position: relative;
+  float: none;
+  @include desktop {
+    max-width: 1425px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0 90px !important;
+  }
+  @include tablet {
+    padding: 0 20px;
+  }
+
+  @include mobile {
+    padding: 0 20px;
+  }
+}
+
+.page_content_wrapper {
+  width: 100%;
+}
+
+#page_content_wrapper,
+.page_content_wrapper {
+  width: 960px;
+  margin: auto;
+  padding-bottom: 0;
+  margin-top: 0;
+  @include desktop {
+    width: 100%;
+  }
+  @include tablet {
+    width: 100%;
+  }
+  @include xl {
+    width: 100%;
+  }
+  @include lg {
+    width: 100%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
+
+#page_content_wrapper p,
+.page_content_wrapper p {
+  padding-top: 0.7em;
+  padding-bottom: 1.3em;
+}
+
+.top_bar {
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  background: rgb(256, 256, 256, 0.95);
+  background: rgba(256, 256, 256, 0.95);
+  border-bottom: 1px solid #dce0e0;
+  float: left;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.one {
+  clear: both;
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  @include mobile {
+    margin: 0 !important;
+    float: inherit;
+  }
+  @include desktop {
+    float: inherit;
+  }
+  @include tablet {
+    float: inherit;
+  }
+  @include lg {
+    float: inherit;
+  }
+  @include xl {
+    float: inherit;
+  }
+}
+
+#wrapper.hasbg.transparent {
+  padding-top: 0 !important;
+}
+// responsive base
+#wrapper {
+  float: left;
+  width: 100%;
+  -webkit-transition: -webkit-transform 500ms ease;
+  -moz-transition: transform 500ms ease;
+  -o-transition: -o-transform 500ms ease;
+  transition: transform 500ms ease;
+  padding-top: 68px;
+  @include mobile {
+    padding-top: 60px;
+    overflow-x: hidden;
+  }
+  @include tablet {
+    overflow-x: hidden;
+  }
+  @include xl {
+    overflow-x: hidden;
+  }
+  @include lg {
+    overflow-x: hidden;
+  }
+  @include desktop {
+    overflow-x: hidden;
+    padding-top: 74px;
+  }
+}

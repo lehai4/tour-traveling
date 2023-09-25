@@ -1,0 +1,278 @@
+#footer.ppb_wrapper {
+  margin-top: 0;
+}
+#footer {
+  color: #cccccc;
+}
+#footer {
+  background-color: #000000;
+  p {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
+.footer#footer {
+  width: 100%;
+  margin: auto;
+  padding: inherit;
+  word-wrap: break-word;
+  float: left;
+  clear: both;
+  margin-top: inherit;
+  border-top: none;
+  background: #000;
+}
+#footer {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+  word-wrap: break-word;
+  margin-bottom: 0;
+  padding-top: 50px;
+  float: left;
+  clear: both;
+  margin-top: 20px;
+}
+
+.ppb_wrapper {
+  margin-top: 0;
+  width: 100%;
+}
+.widgettitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+}
+
+h2.widgettitle {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: none;
+  color: #000000;
+}
+h2.widgettitle {
+  color: $bg-root;
+}
+.textwidget {
+  p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    span {
+      margin-right: 10px;
+    }
+  }
+  img {
+    max-width: 95%;
+    height: auto;
+    margin-top: 30px;
+  }
+}
+#copyright {
+  float: left;
+  width: 50%;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+@include mobile {
+  #copyright {
+    float: left;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+@include mobile {
+  #copyright {
+    width: 100%;
+  }
+  .footer_bar_wrapper {
+    padding-top: 10px;
+  }
+  .footer_bar {
+    padding: 0 0 10px 0 !important;
+  }
+}
+@include tablet {
+  #copyright {
+    float: left;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+@include tablet {
+  #copyright {
+    width: 100%;
+  }
+  .footer_bar_wrapper {
+    padding-top: 10px;
+  }
+  .footer_bar {
+    padding: 0 0 10px 0 !important;
+  }
+  .footer_bar_wrapper {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+@include lg {
+  #copyright {
+    width: 100%;
+  }
+  .footer_bar_wrapper {
+    padding-top: 10px;
+  }
+  .footer_bar {
+    padding: 0 0 10px 0 !important;
+  }
+  .footer_bar_wrapper {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+@include xl {
+  .footer_bar_wrapper {
+    padding-top: 10px;
+  }
+  .footer_bar {
+    padding: 0 0 10px 0 !important;
+  }
+  .footer_bar_wrapper {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+@include desktop {
+  .footer_bar_wrapper {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+.ant-col-override.ant-col-1,
+.ant-col-override.ant-col-xs-1,
+.ant-col-override.ant-col-sm-1,
+.ant-col-override.ant-col-md-1,
+.ant-col-override.ant-col-lg-1,
+.ant-col-override.ant-col-2,
+.ant-col-override.ant-col-xs-2,
+.ant-col-override.ant-col-sm-2,
+.ant-col-override.ant-col-md-2,
+.ant-col-override.ant-col-lg-2,
+.ant-col-override.ant-col-3,
+.ant-col-override.ant-col-xs-3,
+.ant-col-override.ant-col-sm-3,
+.ant-col-override.ant-col-md-3,
+.ant-col-override.ant-col-lg-3,
+.ant-col-override.ant-col-4,
+.ant-col-override.ant-col-xs-4,
+.ant-col-override.ant-col-sm-4,
+.ant-col-override.ant-col-md-4,
+.ant-col-override.ant-col-lg-4,
+.ant-col-override.ant-col-5,
+.ant-col-override.ant-col-xs-5,
+.ant-col-override.ant-col-sm-5,
+.ant-col-override.ant-col-md-5,
+.ant-col-override.ant-col-lg-5,
+.ant-col-override.ant-col-6,
+.ant-col-override.ant-col-xs-6,
+.ant-col-override.ant-col-sm-6,
+.ant-col-override.ant-col-md-6,
+.ant-col-override.ant-col-lg-6,
+.ant-col-override.ant-col-7,
+.ant-col-override.ant-col-xs-7,
+.ant-col-override.ant-col-sm-7,
+.ant-col-override.ant-col-md-7,
+.ant-col-override.ant-col-lg-7,
+.ant-col-override.ant-col-8,
+.ant-col-override.ant-col-xs-8,
+.ant-col-override.ant-col-sm-8,
+.ant-col-override.ant-col-md-8,
+.ant-col-override.ant-col-lg-8,
+.ant-col-override.ant-col-9,
+.ant-col-override.ant-col-xs-9,
+.ant-col-override.ant-col-sm-9,
+.ant-col-override.ant-col-md-9,
+.ant-col-override.ant-col-lg-9,
+.ant-col-override.ant-col-10,
+.ant-col-override.ant-col-xs-10,
+.ant-col-override.ant-col-sm-10,
+.ant-col-override.ant-col-md-10,
+.ant-col-override.ant-col-lg-10,
+.ant-col-override.ant-col-11,
+.ant-col-override.ant-col-xs-11,
+.ant-col-override.ant-col-sm-11,
+.ant-col-override.ant-col-md-11,
+.ant-col-override.ant-col-lg-11,
+.ant-col-override.ant-col-12,
+.ant-col-override.ant-col-xs-12,
+.ant-col-override.ant-col-sm-12,
+.ant-col-override.ant-col-md-12,
+.ant-col-override.ant-col-lg-12,
+.ant-col-override.ant-col-13,
+.ant-col-override.ant-col-xs-13,
+.ant-col-override.ant-col-sm-13,
+.ant-col-override.ant-col-md-13,
+.ant-col-override.ant-col-lg-13,
+.ant-col-override.ant-col-14,
+.ant-col-override.ant-col-xs-14,
+.ant-col-override.ant-col-sm-14,
+.ant-col-override.ant-col-md-14,
+.ant-col-override.ant-col-lg-14,
+.ant-col-override.ant-col-15,
+.ant-col-override.ant-col-xs-15,
+.ant-col-override.ant-col-sm-15,
+.ant-col-override.ant-col-md-15,
+.ant-col-override.ant-col-lg-15,
+.ant-col-override.ant-col-16,
+.ant-col-override.ant-col-xs-16,
+.ant-col-override.ant-col-sm-16,
+.ant-col-override.ant-col-md-16,
+.ant-col-override.ant-col-lg-16,
+.ant-col-override.ant-col-17,
+.ant-col-override.ant-col-xs-17,
+.ant-col-override.ant-col-sm-17,
+.ant-col-override.ant-col-md-17,
+.ant-col-override.ant-col-lg-17,
+.ant-col-override.ant-col-18,
+.ant-col-override.ant-col-xs-18,
+.ant-col-override.ant-col-sm-18,
+.ant-col-override.ant-col-md-18,
+.ant-col-override.ant-col-lg-18,
+.ant-col-override.ant-col-19,
+.ant-col-override.ant-col-xs-19,
+.ant-col-override.ant-col-sm-19,
+.ant-col-override.ant-col-md-19,
+.ant-col-override.ant-col-lg-19,
+.ant-col-override.ant-col-20,
+.ant-col-override.ant-col-xs-20,
+.ant-col-override.ant-col-sm-20,
+.ant-col-override.ant-col-md-20,
+.ant-col-override.ant-col-lg-20,
+.ant-col-override.ant-col-21,
+.ant-col-override.ant-col-xs-21,
+.ant-col-override.ant-col-sm-21,
+.ant-col-override.ant-col-md-21,
+.ant-col-override.ant-col-lg-21,
+.ant-col-override.ant-col-22,
+.ant-col-override.ant-col-xs-22,
+.ant-col-override.ant-col-sm-22,
+.ant-col-override.ant-col-md-22,
+.ant-col-override.ant-col-lg-22,
+.ant-col-override.ant-col-23,
+.ant-col-override.ant-col-xs-23,
+.ant-col-override.ant-col-sm-23,
+.ant-col-override.ant-col-md-23,
+.ant-col-override.ant-col-lg-23,
+.ant-col-override.ant-col-24,
+.ant-col-override.ant-col-xs-24,
+.ant-col-override.ant-col-sm-24,
+.ant-col-override.ant-col-md-24,
+.ant-col-override.ant-col-lg-24 {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  float: none !important;
+}

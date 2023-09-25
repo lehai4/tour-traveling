@@ -1,0 +1,14 @@
+.page_content_wrapper .item-choose {
+  @include flex(center, center);
+  @include direction(column);
+  padding: 0 20px;
+  text-align: center;
+}
+.page_content_wrapper .item-choose p {
+  padding-top: 0.7rem;
+  padding-bottom: 1.3rem;
+}
+.page_content_wrapper .item-choose img {
+  height: 150px;
+  width: 150px;
+}
