@@ -18,9 +18,19 @@ const Trip = () => {
                     <a href={trip.url} className="tour_image">
                       <img src={trip.image} alt={trip.place} />
                       {trip.sales && <div className="tour_label">Sale</div>}
-                      <div className="tour_price">
-                        ${trip.price.toLocaleString()}
-                      </div>
+                      {!trip.discount && (
+                        <div className="tour_price">
+                          ${trip.price.toLocaleString()}
+                        </div>
+                      )}
+                      {trip.discount && (
+                        <div className="tour_price has_discount">
+                          <span className="normal_price">
+                            ${trip.price.toLocaleString()}
+                          </span>
+                          ${trip.discount.toLocaleString()}
+                        </div>
+                      )}
                     </a>
                     <div className="trip_info_wrapper">
                       <a href={trip.url}>

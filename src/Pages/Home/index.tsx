@@ -5,11 +5,22 @@ import {
   UpOutlined,
 } from "@ant-design/icons";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { SvgIcon } from "@mui/material";
 import type { MenuProps } from "antd";
-import { Badge, Button, Drawer, FloatButton, Image, Menu, Space } from "antd";
+import {
+  Badge,
+  Button,
+  Col,
+  Drawer,
+  FloatButton,
+  Image,
+  Menu,
+  Space,
+} from "antd";
 import Link from "antd/es/typography/Link";
 import React, { useCallback, useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import { footer } from "../../MockAPI";
 import {
   Article,
   Choose,
@@ -18,6 +29,7 @@ import {
   SectionTitle,
   SliderOne,
   SliderTwo,
+  Star,
   Trip,
 } from "../../components";
 type MenuItem = Required<MenuProps>["items"][number];
@@ -203,20 +215,51 @@ const item: MenuItem[] = [
       getItem("Video", "video"),
     ]),
   ]),
-  getItem(<Space style={{ columnGap: 0 }}>Booking</Space>, "booking", <></>),
+  getItem(<Space style={{ columnGap: 0 }}>Booking</Space>, "booking", <></>, [
+    getItem("Online Payment for Booking", "on", null, [
+      getItem("Varrible Tours Pricing", "var"),
+      getItem("Simple Tours Pricing", "si"),
+    ]),
+    getItem("Custom BooKing Form", "cs", null, [
+      getItem("Booking Form + Custom Date", "b-f"),
+    ]),
+    getItem("Tours Durations", "t-d", null, [
+      getItem("Sigle Days Tour", "sig"),
+      getItem("Multiple Days Tours", "mul"),
+    ]),
+    getItem("Custom Booking URL for Affilate Tour", "cs-b", <></>),
+  ]),
   getItem(
     <Space style={{ columnGap: 0 }}>Destinations</Space>,
     "destinations",
-    <></>
+    <></>,
+    [
+      getItem("Destinations Fullwidth", "dest"),
+      getItem("Destinations + Video Header", "dest+video"),
+    ]
   ),
-  getItem(<Space style={{ columnGap: 0 }}>Pages</Space>, "Pages", <></>),
-  getItem(<Space style={{ columnGap: 0 }}>Blogs</Space>, "blogs", <></>),
+  getItem(<Space style={{ columnGap: 0 }}>Pages</Space>, "Pages", <></>, [
+    getItem("About Us", "about"),
+    getItem("Contact Us", "contact"),
+    getItem("FAQs", "faqs"),
+  ]),
+  getItem(<Space style={{ columnGap: 0 }}>Blogs</Space>, "blogs", <></>, [
+    getItem("Blog Right Sidebar", "blogr"),
+    getItem("Blog Left Sidebar", "blogl"),
+  ]),
   getItem(
     <Space style={{ columnGap: 0 }}>Shortcodes</Space>,
     "shortcodes",
-    <></>
+    <></>,
+    [
+      getItem("Accordion & Toggles", "accordion"),
+      getItem("Alert Boxes", "alert"),
+    ]
   ),
-  getItem(<Space style={{ columnGap: 0 }}>Shop</Space>, "shop", <></>),
+  getItem(<Space style={{ columnGap: 0 }}>Shop</Space>, "shop", <></>, [
+    getItem("Shop Fullwidth", "shop-w"),
+    getItem("Shop Full Sidebar", "shopf"),
+  ]),
 ];
 const router = [
   {
@@ -228,6 +271,12 @@ const router = [
     ),
   },
 ];
+
+const containerStyle: React.CSSProperties = {
+  position: "relative",
+  height: "auto",
+  overflow: "hidden",
+};
 const Home = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
@@ -269,7 +318,7 @@ const Home = () => {
     };
   }, [handleScroll]);
   return (
-    <React.Fragment>
+    <div style={containerStyle}>
       {/* Header */}
       <div
         className={`header_style_wrapper ${
@@ -354,11 +403,10 @@ const Home = () => {
         placement="right"
         onClose={onClose}
         open={open}
-        getContainer={false}
         width={"50%"}
         onClick={(item) => handleClick(item)}
-        style={{ textAlign: "center" }}
         headerStyle={{ alignSelf: "end", border: "none" }}
+        maskStyle={{ background: "rgba(0, 0, 0, 0.6)" }}
         closeIcon={
           <Button
             icon={<CloseOutlined className="text-white" />}
@@ -379,6 +427,109 @@ const Home = () => {
           }}
           items={item}
         />
+        <div
+          className="ppb_tour_classic nopadding hidden md:block"
+          style={{ margin: "50px 0", padding: "0 5px" }}
+        >
+          <div className="page_content_wrapper">
+            <div className="standard-wrapper">
+              <div className="ant-row flex flex-row flex-wrap -mx-4 gap-y-8">
+                <div className="item grid">
+                  <div className="image-trip portfolio_type relative">
+                    <a className="tour_image">
+                      <img
+                        src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-131729-700x466.jpeg"
+                        style={{ minHeight: 200 }}
+                      />
+                      <div className="tour_price" style={{ bottom: "80px" }}>
+                        $3,900
+                      </div>
+                    </a>
+                    <div className="trip_info_wrapper trip_info-menu-bar">
+                      <a>
+                        <h4 className="md:font-bold font-extrabold">
+                          Swim Alps
+                        </h4>
+                      </a>
+                      <div className="tour_attribute_wrapper">
+                        <div className="tour_attribute_rating">
+                          <div>
+                            <Star
+                              value={4}
+                              style={{
+                                fontSize: 14,
+                                color: "#1EC6B6",
+                              }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="item grid">
+                  <div className="image-trip portfolio_type relative">
+                    <a className="tour_image">
+                      <img
+                        src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630-700x466.jpeg"
+                        style={{ minHeight: 200 }}
+                      />
+                      <div className="tour_price" style={{ bottom: "80px" }}>
+                        $4,200
+                      </div>
+                    </a>
+                    <div className="trip_info_wrapper trip_info-menu-bar">
+                      <a>
+                        <h4 className="md:font-bold font-extrabold">
+                          5 Lake Fuji
+                        </h4>
+                      </a>
+                      <div className="tour_attribute_wrapper">
+                        <div className="tour_attribute_rating">
+                          <div>
+                            <Star
+                              value={4}
+                              style={{
+                                fontSize: 14,
+                                color: "#1EC6B6",
+                              }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{ marginTop: 20 }}>
+            <div className="ant-row flex flex-row justify-center md:justify-normal flex-wrap">
+              {footer.map((social) => (
+                <Col sm={2} md={2} xl={2} xs={2} lg={2} key={social.id}>
+                  <div className="item">
+                    <Button
+                      icon={
+                        <SvgIcon
+                          component={social.icon}
+                          sx={{ fontSize: 24 }}
+                        />
+                      }
+                      size="large"
+                      style={{
+                        border: "none",
+                        boxShadow: "none",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    />
+                  </div>
+                </Col>
+              ))}
+            </div>
+          </div>
+        </div>
       </Drawer>
       {/* ScrollToTop */}
       <FloatButton.BackTop
@@ -389,7 +540,7 @@ const Home = () => {
           !scrollToTop ? "hidden" : ""
         }`}
       />
-    </React.Fragment>
+    </div>
   );
 };
 

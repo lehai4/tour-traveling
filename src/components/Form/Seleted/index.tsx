@@ -1,18 +1,17 @@
 import { Select } from "antd";
 import { Option } from "../../../typeProps";
-import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
-import { SvgIcon } from "@mui/material";
 type SelectedProps = {
   options: Option[];
   value: Option;
+  icon: any;
   handleChange: (e: Option) => void;
 };
-const Selected = ({ options, handleChange, value }: SelectedProps) => {
+const Selected = ({ options, handleChange, value, icon }: SelectedProps) => {
   return (
     <Select
       value={value}
       size="large"
-      suffixIcon={<SvgIcon component={UnfoldMoreIcon} />}
+      suffixIcon={<>{icon}</>}
       onChange={handleChange}
       options={options}
       className="ant-select-sort"

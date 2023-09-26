@@ -9,6 +9,14 @@
   border: 1px solid $txt-second-color;
   border-radius: 5px;
 }
+.normal_price {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 5px;
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-size: 13px;
+}
 .tour_excerpt {
   font-size: 13px;
   margin-top: -5px;

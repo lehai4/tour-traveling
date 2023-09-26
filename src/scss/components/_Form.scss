@@ -12,6 +12,26 @@
   z-index: 2;
   position: relative;
 }
+
+.tour_advance_search_wrapper_link {
+  width: 100%;
+  clear: both;
+}
+
+.tour_advance_search_wrapper_link {
+  font-size: 13px;
+  margin: 0 0 5px 0;
+  position: relative;
+  top: -10px;
+}
+.tour_advance_search_wrapper_link {
+  text-align: left;
+}
+#tour_advance_search_toggle {
+  @include flex(center, start);
+  @include direction(row);
+}
+
 .form-group {
   @include xl {
     width: 280px;

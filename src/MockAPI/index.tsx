@@ -60,7 +60,8 @@ export const trips = [
     place: "Discover Japan",
     desc: "City Tours, Iconic",
     url: "https://themes.themegoods.com/grandtour/demo/tour/discover-japan/",
-    price: 2500,
+    price: 3000,
+    discount: 2500,
     star: 4,
     view: 4,
     time: 5,
@@ -145,6 +146,7 @@ export const footer = [
     bg: "#405de6",
   },
 ];
+
 export const footerImage = [
   { image: "https://live.staticflickr.com/8688/28760131762_e4a64b20c4_q.jpg" },
   { image: "https://live.staticflickr.com/7519/27308262031_a6ebf0572e_q.jpg" },

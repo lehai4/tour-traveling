@@ -1,24 +1,27 @@
 import { Input } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
 
 type SearchInputProps = {
+  icon: any;
   value: string;
+  name: string;
+  placeholder: string;
   handleSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
-const SearchInput = ({ value, handleSearch }: SearchInputProps) => {
+const SearchInput = ({
+  value,
+  icon,
+  name,
+  placeholder,
+  handleSearch,
+}: SearchInputProps) => {
   return (
     <Input
       size="large"
+      name={name}
       className="ant-input-search"
       value={value}
-      suffix={
-        <SearchOutlined
-          style={{
-            fontSize: 16,
-          }}
-        />
-      }
-      placeholder="Destination, city"
+      suffix={<>{icon}</>}
+      placeholder={placeholder}
       onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleSearch(e)}
     />
   );

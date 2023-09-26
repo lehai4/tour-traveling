@@ -106,3 +106,13 @@
     opacity: 1;
   }
 }
+// MenuBar mobile
+.trip_info_wrapper.trip_info-menu-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  z-index: 1;
+}
